@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Tendai Mtiti</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Tendai Mtiti</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">My Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact Me</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section-pic-container">
+            <img src="./assets/tindo10.jpg" alt="Tendai Mtiti Profile Picture">
+        </div>
+        <div class="section-text">
+            <p class="section-text-p1">Hello, I'm</p>
+            <h1 class="title">Tendai Mtiti</h1>
+            <p class="section-text-p2">Data Analyst and System Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
+                    Download My CV Here
+                </button>
+                <button class="btn btn-color-1" onclick="location.href= './#contact' ">
+                    Contact Info
+                </button>
+            </div>
+             <div id="socials-container">
+                <img class="icon" onclick="location.href= 'https://www.linkedin.com/in/tendai-mtiti-00ab51266' " src="./assets/linkedin.png" alt="My Linkedin Profile">
+                <img class="icon" onclick="location.href= 'https://github.com/MtitiTendai' " src="./assets/github.png" alt="My Github Profile">
+             </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section-text-p1">Get to know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section-pic-container">
+                <img src="./assets/tendai.jpg" alt="About Me" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience Icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>2+ years <br />Data Scientist</p> <br>
+                        <p>1+ years <br />Software Developer</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education Icon" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Com. in Data Science and Informatics <br /></p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Qui asperiores aliquid sed laborum explicabo eligendi, 
+                        nisi corporis aut dolor magni accusantium rerum quibusdam 
+                        distinctio saepe odio perferendis! Harum, debitis vel consectetur
+                        hic velit adipisci dolorum aut quis suscipit facere molestias 
+                        ducimus non voluptas nisi autem quas nihil voluptate natus 
+                        maiores!</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href= './#experience' ">
+    </section>
+    <section id="experience">
+        <p class="section-text-p1">Explore My Experience</p>
+        <h1 class="title">Experience and Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Software Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/html.png" alt="HTML" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>                           
+                        </article>
+                        <article>
+                            <img src="./assets/css.jpeg" alt="CSS" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>                           
+                        </article>
+                        <article>
+                            <img src="./assets/javascript.png" alt="JAVASCRIPT" class="icon">
+                            <div>
+                                <h3>JAVASCRIPT</h3>
+                                <p>Experienced</p>
+                            </div>                           
+                        </article>
+                        <article>
+                            <img src="./assets/mongodb.png" alt="MONGODB" class="icon">
+                            <div>
+                                <h3>MONGODB</h3>
+                                <p>Experienced</p>
+                            </div>                           
+                        </article>
+                        <article>
+                            <img src="./assets/react.png" alt="REACT" class="icon">
+                            <div>
+                                <h3>REACT</h3>
+                                <p>Experienced</p>
+                            </div>                           
+                        </article>
+                        <article>
+                            <img src="./assets/bootstrap.jpeg" alt="BOOTSTRAP" class="icon">
+                            <div>
+                                <h3>BOOTSTRAP</h3>
+                                <p>Intermediate</p>
+                            </div>                           
+                        </article>
+                        <article>
+                            <img src="./assets/nodejs.png" alt="NODE" class="icon">
+                            <div>
+                                <h3>NODE</h3>
+                                <p>Intermediate</p>
+                            </div>                           
+                        </article>
+                        <article>
+                            <img src="./assets/php.png" alt="PHP" class="icon">
+                            <div>
+                                <h3>PHP</h3>
+                                <p>Intermediate</p>
+                            </div>                           
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-subtitle">MACHINE LEARNING AND DATA ANALYSIS</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/python.jpeg" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>PYTHON</h3>
+                                <p>Experienced</p>
+                            </div>                           
+                        </article>
+                        <article>
+                            <img src="./assets/r.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>R</h3>
+                                <p>Intermediate</p>
+                            </div>                           
+                        </article>
+                        <article>
+                            <img src="./assets/powerbi.jpeg" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>POWER BI</h3>
+                                <p>Experienced</p>
+                            </div>                           
+                        </article>
+                        <article>
+                            <img src="./assets/excel.jpeg" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>EXCEL</h3>
+                                <p>Intermediate</p>
+                            </div>                           
+                        </article>
+                        <article>
+                            <img src="./assets/mysql.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>MYSQL</h3>
+                                <p>Experienced</p>
+                            </div>                           
+                        </article>
+                        <article>
+                            <img src="./assets/seaborn.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>SEABORN</h3>
+                                <p>Experienced</p>
+                            </div>                           
+                        </article>
+                        <article>
+                            <img src="./assets/tensorflow.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>TENSORFLOW</h3>
+                                <p>Basics</p>
+                            </div>                           
+                        </article>
+                        <article>
+                            <img src="./assets/matplotlib.png" alt="Experience Icon" class="icon">
+                            <div>
+                                <h3>MATPLOTLIB</h3>
+                                <p>Experienced</p>
+                            </div>                           
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href= './#projects' ">
+    </section>
+    <section id="projects">
+        <p class="section-text-p1">Browse My Projects</p>
+        <h1 class="title">Data Science Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/amazon.jpg" alt="recommendation-system" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">Medication Recommendation System (PYTHON)</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href= 'https://github.com/MtitiTendai/Adidas-Sales-Analysis-Dashboard' ">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/amazon.jpg" alt="sales-analysis" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">Sales Analysis (POWER BI)</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href= 'https://github.com/MtitiTendai/Adidas-Sales-Analysis-Dashboard' ">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/amazon.jpg" alt="hospital-operations" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">Parirenyatwa Hospital Operations Dashboard (POWER BI)</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href= 'https://github.com/MtitiTendai/Adidas-Sales-Analysis-Dashboard' ">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/amazon.jpg" alt="Project-1" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">Air Zimbabwe Crew Schelduling Optimisation (PYTHON)</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href= 'https://github.com/MtitiTendai/Adidas-Sales-Analysis-Dashboard' ">
+                        Github
+                    </button>
+                </div>
+            </div>
+    </section><br><br> 
+    <!-- Software Development Projects section-->     
+    <section id="projects">
+        <p class="section-text-p1">Get More About My Projects</p>
+        <h1 class="title">Software Development Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/amazon.jpg" alt="recommendation-system" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">Air Zimbabwe Employee Management System (PHP)</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href= 'https://github.com/MtitiTendai/Adidas-Sales-Analysis-Dashboard' ">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/amazon.jpg" alt="webstore" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">My Personal Webstore (JAVASCRIPT)</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href= 'https://github.com/MtitiTendai/Adidas-Sales-Analysis-Dashboard' ">
+                        Github
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/christianlife.jpg" alt="clm" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">Christian Life Ministry Website</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href= 'https://github.com/MtitiTendai/Adidas-Sales-Analysis-Dashboard' ">
+                        Github
+                    </button>
+                </div>
+            </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href= './#projects' ">
+    </section>
+    <section id="contact">
+        <p class="section-text-p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/gmail.png" alt="Email icon" class="icon icon-contact">
+                <p><a href="mailto:tendaimtiti10@gmail.com">Send email</a></p>
+            </div>          
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="Linkedin icon" class="icon icon-contact">
+                <p><a href="https://www.linkedin.com/in/tendai-mtiti-00ab51266">Linkedin</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/whatsapp.jpg" alt="Whatsapp icon" class="icon icon-contact">
+                <p><a href="https://www.linkedin.com/in/tendai-mtiti-00ab51266">Whatsapp</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/facebook.jpg" alt="Facebook icon" class="icon icon-contact">
+                <p><a href="https://www.linkedin.com/in/tendai-mtiti-00ab51266">Facebook</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/phone.jpg" alt="Phone icon" class="icon icon-contact">
+                <p><a href="https://www.linkedin.com/in/tendai-mtiti-00ab51266">Phone</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">My Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Tendai Mtiti. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
